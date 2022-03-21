@@ -1,0 +1,28 @@
+.scrolling-active {
+    /* background-color: black; */
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .2);
+    position: fixed;
+    width: 100%;
+    transition: ease-in-out;
+    transition-duration: 3000;
+    top: 0;
+    z-index: 1;
+    /* color: white; */
+}
+.link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+    background-size: 0 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .5s ease-in-out;
+}
+
+.link-underline-black {
+    background-image: linear-gradient(transparent, transparent), linear-gradient(black, black);
+}
+
+.link-underline:hover {
+    background-size: 100% 2px;
+    background-position: 0 100%
+}
